@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+	<progress max="100" value="40"></progress><br>
+	<meter value="40" max="100"></meter><br>
+	<br>
+	
+	색상 : <input type="color"><br>
+	시간 : <input type="time"><br>
+	
+	<input type="month"><br>
+	<input type="week"><br>
+	<input type="date"><br>
+	날짜를 선택하세요: <input type="date" min="2021-11-01" max="2022-02-28"><br>
+	범위를 선택하세요: <input type="range" min="5" max="10"><br>
+	수량을 지정하세요: <input type="number" min="5" step="5"><br> 
+	검색어: <input type="search"><br>
+	전화번호 : <input type="tel" placeholder="xxx-xxxx-xxxx 형식으로 입력"
+					pattern="(010|011|016|017|018|019)-\d{3,4}-\d{4}"
+					size="50"><br>
+	
+	이메일을 입력하세요: <input type="email" required><br>
+	sns 주소 입력: <input type="url"><br>
+					
+	<input type="submit" value="전송">
+</form>	
+</body>
+</html>

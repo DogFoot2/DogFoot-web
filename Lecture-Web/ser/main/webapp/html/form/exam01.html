@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+		<form>
+			<input type="">
+					type		text(한줄입력)
+								password(암호처리)
+								checkbox(다중선택)
+								radio(단일선택)
+								button(사용자 정의 이벤트)
+								file(첨부파일)
+								reset(초기화)
+								hidden(입력받지 않은 데이터를 서버에 전송)
+								submit(입력받은 모든 데이터 전송)
+			<textarea>			여러줄 입력
+			<textarea>
+			</textarea> 	(시작 태그와 종료 태그)
+		</form>
+ -->
+ 	<form action="http://www.naver.com">
+ 	
+ 		아이디: <input type="text" size="40"><br>
+ 		비밀번호: <input type="password"><br>
+ 		<br>
+ 		
+ 		<strong>희망연봉</strong><br>
+ 		<input type="radio" name="sal"> 2500~2800<br>
+ 		<input type="radio" name="sal"> 2800~3100<br>
+ 		<input type="radio" name="sal"> 3100~3500<br>
+ 		<input type="radio" name="sal"> 3500~3700<br>
+ 		<input type="radio" name="sal"> 3600이상<br>
+		<br>
+		<strong>사용 언어(중복선택 가능)</strong><br>
+		<input type="checkbox" name="Lang">C<br>
+		<input type="checkbox" name="Lang">JAVA<br>
+		<input type="checkbox" name="Lang">C++<br>
+		<input type="checkbox" name="Lang">JAVASCRIPT<br>
+		<input type="checkbox" name="Lang">SERVLET/JSP<br>
+		<input type="checkbox" name="Lang">ASP<br>
+		<input type="checkbox" name="Lang">PYTHON<br>
+		<br>
+		<strong>(중복선택)</strong><br>
+		<input type="checkbox" name="hobby">음악감상<br>
+		<input type="checkbox" name="hobby">코딩<br>
+		<input type="checkbox" name="hobby">디버깅<br>
+		<br>
+		<strong>자기소개</strong><br>
+		<textarea rows="6" cols="40"></textarea><br>
+		
+		첨부파일 : <input type="file"><br>
+		
+		<button>버튼</button>
+		<button type="reset">초기화</button>
+		<button type="submit">전송</button>
+		<button><img src="/Lecture-Web/html/images/dog.jpg" width="100" height="100"></button>
+		
+	<!-- 	<input type="button" value="버튼">
+		<input type="reset">
+ 		<input type="submit" value="전송">  -->
+ 		
+ 	</form>
+</body>
+</html>
