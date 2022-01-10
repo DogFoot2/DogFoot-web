@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	let nums = [10, 34, 65, 23, 43]
+	/*
+	nums.forEach(function(element) {
+		document.write(element + '&nbsp;&nbsp;&nbsp;') // 공백 기호
+	})
+	document.write('<br>')
+	*/
+	let nums2 = []
+	for(let i in nums) {
+		nums2[i] = nums[i] + 100
+	}
+	
+	let num2 = nums.map(function(element, index) { 	// 배열 개수만큼 function을 호출
+		return element + 100 //map이 리턴된 정보를 가지고 있는 배열을 만들어 줌 / 이 자체가 deep copy
+	})
+	
+	document.write('nums : ' + nums + '<br>')
+	document.write('num2 : ' + nums2 + '<br>')
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

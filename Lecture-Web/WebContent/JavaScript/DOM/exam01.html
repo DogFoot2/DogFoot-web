@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	window.onload = function() {
+		alert('innerHTML: ' + document.body.innerHTML)
+		alert('innerHTML: ' + document.body.innerText)
+
+	
+	let tags = ''
+		tags += '<ul>'
+		tags += '	<li>red</li>'
+		tags += '	<li>green</li>'
+		tags += '	<li>blue</li>'
+		tags += '</ul>'
+		
+	document.body.innerText += tags
+	
+	}
+</script>
+</head>
+<body>
+	<h1>안녕하세요</h1>
+	Hello
+</body>
+</html>

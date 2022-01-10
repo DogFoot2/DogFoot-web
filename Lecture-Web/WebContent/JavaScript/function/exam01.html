@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function testFunction() {
+		alert('call....')
+	}
+	
+	function testFunction2(data) {
+		alert('data : ' + data)
+	}
+	
+	function testFunction3(data, data2) {
+		alert(`data : ${ data }, data2 : ${ data2 }`)
+	}
+	
+	function sum(a, b) {
+		return a + b
+	}
+	
+	var temp = function func() {
+		alert('call func()')
+	}
+	
+	var func01 = function {
+		alert('call func01()...')
+	}
+	
+	function callbackFunction(f) {
+		f()
+	}
+
+	
+	callbackFunction(temp)
+	callbackFunction(testFunction)
+	
+	
+	func01()
+	
+	temp()
+
+	let total = sum(10, 20)
+	alert('총합 :' + total)
+	
+	testFunction()
+	testFunction2(10)	
+	testFunction3(4, 9)	
+</script>
+</head>
+<body>
+
+</body>
+</html>

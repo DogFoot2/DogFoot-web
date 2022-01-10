@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/*
+ 	자바스크립트 내장함수
+ 	1. 타이머
+ 	setTimeout(함수 ,ms) 어느 일정한 시간이 지나면 설정한 작업 실행
+ 	함수: 해야 될 작업에 대한 함수가 들어감
+ 	setInterval(함수, ms)
+ 	clearInterval(id)
+ 	clearTimeout()
+	 
+ 
+ 	 let func = function() {
+ 	alert('3초가 지났습니다')
+ 	}
+ 	
+ 	setTimeout(func,3000)
+ 	
+ 	setTimeout(function() {
+		alert('3초가 지났습니다')
+	}, 3000);
+ */
+	let id = setInterval(function() {
+		document.write('현재시간 : ' + new Date() + '<br>')
+	}, 1000)
+ 
+ 	setTimeout(function() {
+ 		alert('날짜 출력 종료')
+ 		clearInterval(id)
+ 	}, 10000)
+ 
+</script>
+</head>
+<body>
+
+</body>
+</html>

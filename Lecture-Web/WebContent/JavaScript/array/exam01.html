@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	let array = ['A', 123, 12.34, "Hello", true]
+	document.write(`첫번째 요소: ${ array[0] }<br>`)
+	document.write(`두번째 요소: ${ array[1] }<br>`)
+	document.write(`세번째 요소: ${ array[2] }<br>`)
+	document.write(`네번째 요소: ${ array[3] }<br>`)
+	document.write(`다섯번째 요소: ${ array[4] }<br>`)
+	document.write(`여섯번째 요소: ${ array[5] }<br>`)
+	
+	array[8] = false
+	
+	document.write(array + '<br>')
+	document.write('원소개수 : ' array.length + '개<br>')	
+	
+	array[array.length] = "add"
+	document.write(`add추가 후 array : ${array }<br>`)
+	document.write(array + '<br>')
+
+	array.push('end')
+	document.write(`end추가 후 array : ${array }<br>`)
+	document.write(array + '<br>')
+	
+	let data = array.pop()
+	document.write(`삭제된 원소 : ${ data }<br>`))
+	document.write(array + '<br>')
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

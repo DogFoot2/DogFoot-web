@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function clickTimer() {
+		setTimeout(function() {
+			alert('3초 지났습니다')
+		}, 3000)
+	}
+	
+	window.onload = function() {
+		
+		let btn = document.getElementById('btn01')
+		
+		btn.onclick = function() {
+			alert('클릭2 이벤트 발생')
+		}
+		
+		let h1Tag = document.createElement('h1')
+		let textNode = document.createTextNode("hello")
+		h1Tag.appendChild(textNode)
+		document.body.appendChild(h1Tag)
+		h1Tag.style['background-color'] = 'lightgray'
+		
+		h1Tag.onclick = function() {
+			alert('h1 click..')
+		}
+	}
+</script>
+</head>
+<body>
+	<!-- 인라인 이벤트 모델 -->
+	<input type="button" value="클릭" onclick="alert('click!')">
+	<input type="button" value="3초타이머" onclick="clickTimer()">
+	<input type="button" value="클릭2" id="btn01">
+</body>
+</html>

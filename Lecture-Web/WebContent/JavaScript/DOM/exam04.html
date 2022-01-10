@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	window.onload = function() {
+		
+		let idTag = document.getElementById("id")
+		idTag.parentNode.removeChild(idTag)
+// 		idTag.remove()
+
+		pwdTag = document.getElementById('pwd')
+		pwdTag.style.color = 'lightblue'
+		pwdTag.style.fontSize = '16pt'
+		pwdTag.style.backgroundColor = 'orange'
+		pwdTag.style['border-style']
+		pwdTag.style['border-color'] = 'blue'
+		pwdTag.style['border-width'] = '3px'
+	}
+</script>
+</head>
+<body>
+	<table border="1" style="width:100px; height:100px">
+		<tr>
+			<td id="id">아이디</td>
+		</tr>
+		<tr>
+			<td id="pwd">패스워드</td>
+		</tr>
+	</table>
+</body>
+</html>

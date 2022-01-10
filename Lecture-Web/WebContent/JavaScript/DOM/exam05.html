@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function clickTimer() {
+		setTimeout(function() {
+			alert('3초 지났습니다')
+		}, 3000)
+	}
+</script>
+</head>
+<body>
+	<!-- 인라인 이벤트 모델 -->
+	<input type="button" value="클릭" onclick="alert('click!')">
+	<input type="button" value="3초타이머" onclick="clickTimer()">
+</body>
+</html>
