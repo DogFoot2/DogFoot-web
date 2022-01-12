@@ -22,6 +22,11 @@
 		width: 80%
 	}
 </style>
+<script>
+	function goSignUpForm() {
+		location.href = "signUpForm.jsp"
+	}
+</script>
 </head>
 <body>
 	<div align="center">
@@ -70,6 +75,8 @@
 		}
 		%>
 	</table>
+	<br>
+	<button onclick="goSignUpForm()">회원가입</button>
 	</div>
 
 </body>
