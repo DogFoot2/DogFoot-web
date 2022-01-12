@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#monitor {
+		text-align: right
+	}
+</style>
+<script>
+	function clickBtn(obj) {
+		let data = obj.value
+		
+		let monitor = document.getElementById("monitor")
+		if(data == 'clear') {
+			monitor.value = ''
+		} else if(data == '=') {
+			monitor.value = eval(monitor.value)
+		} else {
+		monitor.value += data
+	}
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="monitor"><br>
+	<input type="button" value="1" onclick="clickBtn(this)"> 
+	<!--  버튼을 눌렀을 때 이벤트가 발생하도록 onclick 사용  -->
+	<input type="button" value="2" onclick="clickBtn(this)">
+	<input type="button" value="3" onclick="clickBtn(this)">
+	<input type="button" value="4" onclick="clickBtn(this)">
+	<input type="button" value="5" onclick="clickBtn(this)">
+	<input type="button" value="+" onclick="clickBtn(this)">
+	<input type="button" value="-" onclick="clickBtn(this)">
+	<input type="button" value="*" onclick="clickBtn(this)">
+	<input type="button" value="/" onclick="clickBtn(this)">
+	<input type="button" value="=" onclick="clickBtn(this)">
+	<input type="button" value="clear" onclick="clickBtn(this)">
+</body>
+</html>

@@ -3,15 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+	function checkForm() {
+		
+		let f = document.searchForm // 너무 길기 때문에 f로 변수 설정
+		
+		if(f.searchType.selectedIndex == 0) {
+			alert('검색 항목을 선택하세요')
+			f.searchType.focus()
+			return false // submit은 날라가면 안 되기 때문에 리턴 false
+		}
+		
+		if(f.searchWord.value == '') {
+			alert('검색어를 입력하세요')
+			f.searchWord.focus() // focus가 검색어쪽으로 옮겨가게
+			return false
+		}
+		
+		if(f.searchWord.value.length < 2) {
+			alert('검색어는 2글자 이상 입력하세요')
+			f.searchWord.focus()
+			return false
+		}
+		
+		return true
+	}
+</script>
 </head>
 <body>
-	<form action="http://www.naver.com">
-		<select>
+	<form action="http://www.naver.com" name="searchForm"
+			onsubmit="return checkForm()">
+		<select name="searchType">
 			<option>선택하세요</option>
 			<option>제목</option>
 			<option>작성자</option>
 		</select>
-		<input type="text">
+		<input type="text" name="searchWord">
 		<input type="submit" value="검색">
 	</form>
 </body>
