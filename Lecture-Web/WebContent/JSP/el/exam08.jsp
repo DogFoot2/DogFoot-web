@@ -4,7 +4,8 @@
 <%@page import="java.util.Map"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%     
+<%       
+		
     /*
     // 1. 자바빈즈클래스 + 콜렉션
     Board.setTitle("성공");

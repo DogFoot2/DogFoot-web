@@ -40,7 +40,7 @@
 <body>
 	<div align="center">
 		<hr>
-		<h2>새글등록</h2>
+		<h2>새 글 등록</h2>
 		<hr>
 		<br>
 		<form action="write.jsp" method="post" 
@@ -62,7 +62,7 @@
 			</tr>
 			</table>
 			<br>
-			<input type="submit" value="새글등록">
+			<input type="submit" value="등록">
 		</form>
 	</div>
 </body>
