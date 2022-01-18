@@ -14,7 +14,6 @@ import kr.co.mlec.util.JDBCClose;
  * 게시판 DB(tbl_board) CRUD
  * 
  * @author USER
- *
  */
 
 public class BoardDAO {
