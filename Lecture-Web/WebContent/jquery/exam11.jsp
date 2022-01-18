@@ -19,7 +19,7 @@
 		3초에 걸려서 Hello World 문장이 화면에 보인 뒤, complete 메시지를 경고창에 띄우기
 		*/
 //		$('h1').show(3000);
-//		alert('complete')colplete가 먼저 나옴
+//		alert('complete')complete가 먼저 나옴
 
 // 		$('h1').show(3000, function() {
 // 			alert('complete')
