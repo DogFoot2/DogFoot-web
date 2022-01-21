@@ -19,9 +19,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="/Mission-Web/css/layout.css">
-<link rel="stylesheet" href="/Mission-Web/css/board.css">
-<script src="/Mission-Web/js/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/layout.css">
+<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/board.css">
+<script src="${ pageContext.request.contextPath }/js/jquery-3.6.0.min.js"></script>
 <script>
 
 	$(document).ready(function() {

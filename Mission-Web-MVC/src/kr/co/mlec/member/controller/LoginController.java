@@ -1,14 +1,16 @@
-package kr.co.mlec.controller;
+package kr.co.mlec.member.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class BoardWriteFormController implements Controller {
+import kr.co.mlec.controller.Controller;
 
-	// jsp 주소를 알려줘야 하기 때문에 리턴값이 string
+public class LoginController implements Controller {
+
 	@Override
 	public String handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-		return "/jsp/board/write.jsp";
+		return "/jsp/login/loginForm.jsp";
 	}
+
 }
